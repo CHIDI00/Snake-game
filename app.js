@@ -66,7 +66,7 @@ const nextTick = function () {
       drawSnake();
       checkGameOver();
       nextTick();
-    }, 150)
+    }, 75)
   } else {
     displayGameOver();
   }
@@ -158,55 +158,7 @@ buttons.forEach(key => {
   key.addEventListener('click', () => changeSnakeDirection({ keyCode: key.dataset.key }))
 })
 
-// const changeSnakeDirectionBtn = function () {
-//   const UPBTN = btnUp;
-//   const RIGHTBTN = btnRight;
-//   const DOWNBTN = btnDown;
-//   const LEFTBTN = btnLeft;
 
-//   goingUpBTN = (yVelocity == -unitSize);
-//   goingDownBTN = (yVelocity == unitSize);
-//   goingLeftBTN = (xVelocity == -unitSize);
-//   goingRightBTN = (xVelocity == unitSize);
-  
-//   if (LEFTBTN && !goingRightBTN) {
-//     xVelocity = -unitSize;
-//     yVelocity = 0;
-//   } else if (RIGHTBTN && !goingLeftBTN) {
-//     xVelocity = unitSize;
-//     yVelocity = 0;
-//   } else if (UPBTN && !goingDownBTN) {
-//     xVelocity = 0;
-//     yVelocity = -unitSize;
-//   } else if (DOWNBTN && !goingUpBTN) {
-//     xVelocity = -0;
-//     yVelocity = unitSize;
-//   }
-
-//   // switch(true) {
-//   //   case(LEFTBTN && !goingRightBTN):
-//   //     xVelocity = -unitSize;
-//   //     yVelocity = 0;
-//   //     break;
-    
-//   //   case(RIGHTBTN && !goingLeftBTN):
-//   //     xVelocity = unitSize;
-//   //     yVelocity = 0;
-//   //     break;
-    
-//   //   case(UPBTN && !goingDownBTN):
-//   //     xVelocity = 0;
-//   //     yVelocity = -unitSize;
-//   //     break;
-    
-//   //   case(DOWNBTN && !goingUpBTN):
-//   //     xVelocity = -0;
-//   //     yVelocity = unitSize;
-//   //     break;
-    
-//   // }
-
-// }
 
 const checkGameOver = function () {
   switch(true) {
@@ -233,12 +185,6 @@ const checkGameOver = function () {
       running = false
     }
   }
-
-  // for (let i = 1; i < snake.length; i++) {
-  //   if(snake[i].x == snake[0].x && snake[i].y == snake[0].y) {
-  //     running = false; 
-  //   }
-  // }
 };
 
 const displayGameOver = function () {
