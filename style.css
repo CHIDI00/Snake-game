@@ -28,6 +28,7 @@ body {
 #gameBoard {
   border: 7px solid #040f37;
   max-width: 100%;
+  border-radius: 5px 5px 0 0;
   /* background-color: #141e41; */
 }
 
@@ -40,6 +41,7 @@ body {
   background: #13053b;
   color: #fff;
   padding: 10px;
+  border-radius: 0 0 5px 5px;
 }
 
 .scoreContainer p {
