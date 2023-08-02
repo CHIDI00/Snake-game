@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(170, 171, 202);
+}
+
+.game_container {
+  max-width: 100%;
+  width: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px solid; */
+  padding: 10px;
+}
+
+#gameBoard {
+  border: 7px solid #040f37;
+  max-width: 100%;
+  /* background-color: #141e41; */
+}
+
+.scoreContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  background: #13053b;
+  color: #fff;
+  padding: 10px;
+}
+
+.scoreContainer p {
+  font-size: 20px;
+}
+
+#resetBtn {
+  width: 100px;
+  font-size: 17px;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  border-radius: 7px;
+  color: #fff;
+  font-weight: 600;
+  background: #544091;
+}
+
+.buttons {
+  display: none;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border: 8px solid #160745;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 30px 0;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background: #4209e0;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+  box-shadow: none;
+  scale: 0.95;
+}
+
+.buttons button {
+  position: absolute;
+  font-size: 25px;
+  border: none;
+}
+
+.buttons #btnUp {
+  top: -25px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 10px 10px 0 0;
+}
+.buttons #btnRight {
+  top: 50%;
+  right: -50px;
+  transform: translate(-50%, -50%);
+  border-radius: 0 10px 10px 0;
+}
+.buttons #btnDown {
+  left: 50%;
+  bottom: -50px;
+  transform: translate(-50%, -50%);
+  border-radius: 0 0 10px 10px;
+}
+.buttons #btnLeft {
+  top: 50%;
+  left: -1px;
+  transform: translate(-50%, -50%);
+  border-radius: 10px 0 0 10px;
+}
+
+
+@media (max-width: 450px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .buttons {
+    display: block;
+  }
+}

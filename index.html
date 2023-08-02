@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="app.js" defer></script>
+  <title>Snake Game</title>
+</head>
+<body>
+  <div class="game_container">
+    <canvas id="gameBoard" width="500" height="500"></canvas>
+    <div class="scoreContainer">
+      <p class="gameScore">Score: <b>0</b></p>
+      <button id="resetBtn">Reset</button>
+    </div>
+    <div class="buttons">
+      <button data-key=38 class="button" id="btnUp">&uparrow;</button>
+      <button data-key=39 class="button" id="btnRight">&rightarrow;</button>
+      <button data-key=40 class="button" id="btnDown">&downarrow;</button>
+      <button data-key=37 class="button" id="btnLeft">&leftarrow;</button>
+    </div>
+  </div>
+
+</body>
+</html>
